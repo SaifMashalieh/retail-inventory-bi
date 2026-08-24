@@ -1,0 +1,29 @@
+# Streamlit theme for the Replenishment Assistant.
+#
+# The app's CSS and Plotly charts are designed against these colours, so the
+# theme is pinned here rather than left to the viewer's system setting —
+# otherwise the custom styling fights whatever Streamlit picks.
+#
+# TO SWITCH TO LIGHT (better for printed report screenshots):
+#   set  base = "light"  and swap the four colour lines for the commented set.
+
+[theme]
+base = "dark"
+primaryColor = "#2DD4BF"           # teal — accents, sliders, links
+backgroundColor = "#0F1620"        # page
+secondaryBackgroundColor = "#182231"  # cards, sidebar, inputs
+textColor = "#E5EAF2"
+font = "sans serif"
+
+# --- light alternative -------------------------------------------------
+# base = "light"
+# primaryColor = "#0D9488"
+# backgroundColor = "#FFFFFF"
+# secondaryBackgroundColor = "#F5F7FA"
+# textColor = "#1F2937"
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false

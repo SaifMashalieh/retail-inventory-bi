@@ -1,0 +1,8 @@
+step,decision,rows_before,rows_after,rows_removed
+D1a,remove cross-sheet duplicates (Dec 2010 published in both sheets),1067371,1044527,22844
+D2,"move cancellations to returns.csv (kept, not deleted)",1044527,1025362,19165
+D3,"remove service codes, postage, vouchers and test rows",1025362,1020724,4638
+D4,"drop non-positive quantity (3,393 write-offs and adjustments)",1020724,1017331,3393
+D4,"drop zero or negative price (2,580 gifts and errors)",1017331,1014751,2580
+D4,drop rows with no product description,1014751,1014751,0
+TOTAL,raw lines -> clean sales lines,1067371,1014751,52620

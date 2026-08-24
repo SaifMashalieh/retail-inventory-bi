@@ -1,0 +1,44 @@
+{
+  "name": "ABC/XYZ reorder point with forecast-error safety stock",
+  "formula": "reorder_point = weekly_demand * lead_time + z * forecast_error * sqrt(lead_time)",
+  "terms": {
+    "weekly_demand": "mean units/week over the 93 training weeks",
+    "forecast_error": "MAE of the SKU's Holt-Winters forecast on held-out weeks",
+    "z": "service-level multiplier, standard normal",
+    "lead_time": "weeks; not present in the source data, so treated as a variable"
+  },
+  "z_values": {
+    "90%": 1.28,
+    "95%": 1.65,
+    "99%": 2.33
+  },
+  "lead_times_weeks": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "n_skus": 300,
+  "training_window": {
+    "start": "2009-11-30",
+    "end": "2011-09-05",
+    "weeks": 93
+  },
+  "holdout_window": {
+    "start": "2011-09-12",
+    "end": "2011-12-05",
+    "weeks": 13
+  },
+  "validation": {
+    "method": "replay real held-out demand against the derived policy",
+    "baseline": "uniform 4-week cover",
+    "lead_time_weeks": 2,
+    "service_level": "95%",
+    "derived_stockout_weeks": 419,
+    "baseline_stockout_weeks": 415,
+    "derived_mean_stock_held": 378.0,
+    "baseline_mean_stock_held": 562.7,
+    "reading": "same service level, 32.8% less stock held"
+  },
+  "note": "safety stock scales with sqrt(lead_time) \u2014 doubling lead time does not double the reorder point"
+}

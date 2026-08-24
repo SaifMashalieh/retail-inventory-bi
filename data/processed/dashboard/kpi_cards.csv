@@ -1,0 +1,10 @@
+kpi,value,unit
+Total revenue,19699733.0,GBP
+SKUs in catalogue,4724.0,count
+Class A SKUs,1030.0,count
+Class A share of revenue,80.0,%
+Delist candidates (CZ),2379.0,count
+Co-stocking pairs (lift>=5),272.0,count
+Absence episodes tested,6896.0,count
+Forecastable SKUs,2810.0,count
+Partner sales lost during a stockout,52.6,%

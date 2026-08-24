@@ -1,0 +1,46 @@
+# ── Raw data ───────────────────────────────────────────────────────────
+# Download online_retail_II.xlsx from UCI — see GET_THE_DATA.md
+data/raw/*
+
+# ── Processed data ─────────────────────────────────────────────────────
+# The three large intermediates are NOT committed. Regenerate them with
+#   python src/build_dataset.py
+#   python src/build_dashboard_tables.py
+# transactions_clean.csv is 169 MB, well past GitHub's file-size limit.
+data/processed/transactions_clean.csv
+data/processed/baskets.csv
+data/processed/dashboard/fact_weekly_demand.csv
+
+# Everything else under data/processed/ IS committed on purpose: the
+# deployed Streamlit app reads sku_profile.csv, sku_weekly.csv,
+# inventory_policy.csv, association_rules.csv, forecast_accuracy.csv and
+# pullthrough_test.csv at runtime, so the app breaks without them.
+
+# ── Python ─────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ── Office / Power BI temp files ───────────────────────────────────────
+*.pbix.tmp
+~$*
+
+# ── Word documents ─────────────────────────────────────────────────────
+# The department's repository template is explicit: documentation lives in
+# Markdown (docs/documentation.md), not Word. The .docx is generated from the
+# same source for formal submission and is kept locally only.
+report/
+*.docx
+
+# ── Private working notes ──────────────────────────────────────────────
+# Writing scaffold and viva rehearsal list — prep material, not project
+# documentation. Kept on disk, deliberately not published.
+docs/WRITING_NOTES.md
+
+# ── OS / IDE ───────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

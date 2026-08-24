@@ -1,0 +1,18 @@
+# Minimum versions so pip installs a prebuilt wheel rather than compiling.
+# mlxtend provides the Apriori / FP-Growth association-rule mining.
+# openpyxl is required to read the .xlsx source file.
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.5
+matplotlib>=3.8
+seaborn>=0.13
+scipy>=1.13
+statsmodels>=0.14
+mlxtend>=0.23
+openpyxl>=3.1
+joblib>=1.4
+streamlit>=1.38
+python-docx>=1.1
+notebook>=7.0
+ipykernel>=6.29
+plotly>=5.20
