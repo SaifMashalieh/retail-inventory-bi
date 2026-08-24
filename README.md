@@ -8,6 +8,11 @@ Analytics, University of Petra. First Semester, 2025/2026.
 **Authors:** Saif Mashalieh (202210039) · Mohammad Marei (202210644)  
 **Supervised by:** Dr. Wasef Matar
 
+### ▶ [Open the live app — Replenishment Assistant](https://retail-inventory-bi-wc4gf24yyuh56pgsxkkrbh.streamlit.app/)
+
+No installation, no account. Type a product name and read its reorder point. *(On the free tier
+the app sleeps after a few idle days and takes ~30 seconds to wake.)*
+
 ---
 
 ## What this project does

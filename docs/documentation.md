@@ -1722,7 +1722,14 @@ The two deliverables are distributed differently, and the difference is a decisi
 
 Publishing to the Power BI Service would require a Pro licence for the author and for every viewer, or a Premium capacity, which places the artefact behind a paywall and makes it unavailable to anyone marking this project without a licence of their own. The `.pbix` opens in the free Power BI Desktop with all twelve of its source tables committed alongside it, so it is fully inspectable and fully reproducible from the repository. Every figure the dashboard would have shown online is reproduced as Figures 15 to 18 of this report.
 
-> **TODO** — Paste the live Streamlit application URL here once the app is deployed. Check it opens in a private browser window before submitting — a working link is worth more than any description of one, and a broken link is worse than neither.
+
+#### The live application
+
+**Replenishment Assistant — https://retail-inventory-bi-wc4gf24yyuh56pgsxkkrbh.streamlit.app/**
+
+The application is live on Streamlit Community Cloud, built directly from the `main` branch of the repository. It requires no installation, no account and no licence: a supervisor can open the link, type a product name and read its reorder point in under a minute. Because the deployment builds from the committed `requirements.txt` and reads the processed tables committed alongside it, the running application and the figures in this report are generated from exactly the same inputs.
+
+One consequence of the free tier is worth stating rather than leaving to be discovered: an application that has not been opened for several days is put to sleep and takes roughly thirty seconds to wake on the next visit. It has not failed — it is starting.
 
 
 ### How the deployment was done
