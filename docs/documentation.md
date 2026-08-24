@@ -4,9 +4,10 @@
 
 **Authors**
 
-- Saif Mashalieh, [Student Number]
+- Saif Mashalieh, 202210039
+- Mohammad Marei, 202210644
 
-**Supervised by:** [Supervisor Name]
+**Supervised by:** Dr. Wasef Matar
 
 **Course:** 307498 – Graduation Project  
 **Semester:** First Semester, 2025/2026  
@@ -174,11 +175,11 @@ Pull-through is real and it is large. When a product disappears from sale, its s
 
 ## Acknowledgment
 
-I would like to thank my supervisor, [Supervisor Name], for the guidance that shaped this project — in particular for insisting that a claim be tested rather than asserted, which is the reason the pull-through effect in section 9 is an experiment and not an assumption.
+We would like to thank our supervisor, Dr. Wasef Matar, for the guidance that shaped this project — in particular for insisting that a claim be tested rather than asserted, which is the reason the pull-through effect in section 9 is an experiment and not an assumption.
 
-I thank the Department of Business Intelligence and Data Analytics at the University of Petra for the resources and the structure of course 307498, within which this work was carried out.
+We thank the Department of Business Intelligence and Data Analytics at the University of Petra for the resources and the structure of course 307498, within which this work was carried out.
 
-The dataset used throughout is Online Retail II, contributed by Dr Daqing Chen to the UCI Machine Learning Repository and released under a Creative Commons Attribution 4.0 licence. The attribution is a condition of that licence, and the project would not have been possible without an openly published transaction record of this depth. I am also indebted to the maintainers of the open-source Python scientific stack — pandas, NumPy, SciPy, statsmodels, scikit-learn, mlxtend, Matplotlib, seaborn, Plotly and Streamlit — every one of which is used in this project and none of which cost anything to use.
+The dataset used throughout is Online Retail II, contributed by Dr Daqing Chen to the UCI Machine Learning Repository and released under a Creative Commons Attribution 4.0 licence. The attribution is a condition of that licence, and the project would not have been possible without an openly published transaction record of this depth. We are also indebted to the maintainers of the open-source Python scientific stack — pandas, NumPy, SciPy, statsmodels, scikit-learn, mlxtend, Matplotlib, seaborn, Plotly and Streamlit — every one of which is used in this project and none of which cost anything to use.
 
 > **TODO** — Add here any individuals who helped, and the disclosure your course requires regarding the use of software tools and AI assistance. Check the 307498 policy before submitting — disclose exactly what it asks for, no more and no less.
 
@@ -1839,7 +1840,7 @@ Everything the deployed application reads at runtime IS committed, so the app st
 from a fresh clone.
 ```
 
-> **TODO** — Paste your GitHub repository URL here.
+**Repository:** https://github.com/SaifMashalieh/retail-inventory-bi
 
 
 ## Results

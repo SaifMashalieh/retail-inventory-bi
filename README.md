@@ -5,7 +5,8 @@
 Graduation Project — Course 307498, Department of Business Intelligence and Data
 Analytics, University of Petra. First Semester, 2025/2026.
 
-**Author:** Saif Mashalieh, [Student Number] · **Supervised by:** [Supervisor Name]
+**Authors:** Saif Mashalieh (202210039) · Mohammad Marei (202210644)  
+**Supervised by:** Dr. Wasef Matar
 
 ---
 
@@ -76,7 +77,7 @@ them would publish an app that cannot start.
 
 ```bash
 # 1. clone
-git clone <your-repo-url>
+git clone https://github.com/SaifMashalieh/retail-inventory-bi.git
 cd retail-inventory-bi
 
 # 2. environment
