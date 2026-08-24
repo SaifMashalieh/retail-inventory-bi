@@ -1715,7 +1715,14 @@ The delist tab is shown here. 2,379 SKUs, 50% of the catalogue, 4.8% of revenue,
 
 The footer on every page repeats the provenance and the limitation in one sentence: built from 1,014,751 transaction lines, reorder points derived from demand and forecast error, and no stock-on-hand in the source — so the policy was validated by simulation against held-out demand rather than against real inventory positions. Carrying the caveat into the product itself, rather than confining it to the report, is a deliberate choice.
 
-> **TODO** — Paste the live Streamlit application URL and the Power BI link here. Check both open in a private browser window before submitting — a working link is worth more than any description of one, and a broken link is worse than neither.
+
+#### How each artefact is distributed
+
+The two deliverables are distributed differently, and the difference is a decision rather than an oversight. The **Streamlit application is hosted**, because its value depends on being usable without installing anything — a buyer asked to clone a repository and run `pip install` will not use it. The **Power BI dashboard is distributed as the `.pbix` file in the repository** rather than published to the Power BI Service.
+
+Publishing to the Power BI Service would require a Pro licence for the author and for every viewer, or a Premium capacity, which places the artefact behind a paywall and makes it unavailable to anyone marking this project without a licence of their own. The `.pbix` opens in the free Power BI Desktop with all twelve of its source tables committed alongside it, so it is fully inspectable and fully reproducible from the repository. Every figure the dashboard would have shown online is reproduced as Figures 15 to 18 of this report.
+
+> **TODO** — Paste the live Streamlit application URL here once the app is deployed. Check it opens in a private browser window before submitting — a working link is worth more than any description of one, and a broken link is worse than neither.
 
 
 ### How the deployment was done
@@ -1724,7 +1731,7 @@ The footer on every page repeats the provenance and the limitation in one senten
 2. A `.streamlit/config.toml` pins the theme, because the app's custom CSS and Plotly charts are designed against a specific palette and would otherwise fight whatever the viewer's system setting chose.
 3. `requirements.txt` pins minimum versions chosen so that pip installs prebuilt wheels rather than compiling from source — a build that compiles NumPy on a free-tier container will time out.
 4. The repository `.gitignore` excludes the two largest intermediates, which exceed the platform's file-size limits, while deliberately **committing** the six processed tables the application reads at runtime. Excluding those would deploy an application that cannot start.
-5. The repository was connected to Streamlit Community Cloud, which builds from the committed requirements file and serves the app at a public URL with no installation required of the user.
+5. The repository was connected to Streamlit Community Cloud, which builds from the committed requirements file and serves the app at a public URL with no installation required of the user. The Power BI file is shipped in the repository rather than published to the Power BI Service, so that it stays openable without a licence.
 
 
 ### Challenges encountered and how they were resolved
