@@ -181,8 +181,6 @@ We thank the Department of Business Intelligence and Data Analytics at the Unive
 
 The dataset used throughout is Online Retail II, contributed by Dr Daqing Chen to the UCI Machine Learning Repository and released under a Creative Commons Attribution 4.0 licence. The attribution is a condition of that licence, and the project would not have been possible without an openly published transaction record of this depth. We are also indebted to the maintainers of the open-source Python scientific stack — pandas, NumPy, SciPy, statsmodels, scikit-learn, mlxtend, Matplotlib, seaborn, Plotly and Streamlit — every one of which is used in this project and none of which cost anything to use.
 
-> **TODO** — Add here any individuals who helped, and the disclosure your course requires regarding the use of software tools and AI assistance. Check the 307498 policy before submitting — disclose exactly what it asks for, no more and no less.
-
 
 ## Business Intelligence Project Description and Objectives
 
